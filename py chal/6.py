@@ -15,15 +15,10 @@ z = int(y)
 
 
 import math
+(c, h) = (50, 30)
+value = []
+items = [x for x in input(">>> ").split(",")]
 
-c = 50
-h = 30
-
-d = input(">>> ").split(",")
-
-#print(d)
-
-
-for val in d:
-    q = int(round(math.sqrt((2*c*int(d[val])/h)))
-    print(q)
+for d in items:
+    value.append(str(int(round(math.sqrt(2*c*float(d)/h)))))
+print(",".join(value))
